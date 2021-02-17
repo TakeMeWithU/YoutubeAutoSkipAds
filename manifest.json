@@ -1,0 +1,17 @@
+{
+    "name": "Youtube Auto Skip Ads",
+    "manifest_version": 2,
+    "version": "1.0",
+    "icons": { "16": "youtubeSkipAd.png",
+               "48": "youtubeSkipAd.png",
+               "128": "youtubeSkipAd.png" },
+    "description": "Extension for auto click skip ads on Youtube",
+    "content_scripts": [{
+       "matches": [
+          "https://www.youtube.com/*"
+       ],
+       "js": [
+          "content.js"
+       ]
+    }]
+ }
